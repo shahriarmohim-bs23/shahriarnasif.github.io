@@ -1,431 +1,396 @@
-<html lang="en-US">
-<!--<![endif]-->
-
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-<meta charset="UTF-8" />
+<link href='https://www.blogger.com/static/v1/widgets/3416767676-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<!-- [ Meta Tag SEO ] -->
+<include expiration='7d' path='*.css'></include>
+<include expiration='7d' path='*.js'></include>
+<include expiration='3d' path='*.gif'></include>
+<include expiration='3d' path='*.jpeg'></include>
+<include expiration='3d' path='*.jpg'></include>
+<include expiration='3d' path='*.png'></include>
+<meta content='sat, 02 jun 2020 00:00:00 GMT' http-equiv='expires'/>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='blogger' name='generator'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='50a030c91a4eddb99fe3e8c7da927739' name='maValidation'/>
+<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link href='http://onlinejudgesolution.blogspot.com/' rel='openid.delegate'/>
+<link href='http://onlinejudgesolution.blogspot.com/2017/04/uva-online-judge-solution-100-3n1.html' rel='canonical'/>
+<title>UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus - Online Judge Solution</title>
+<meta content='UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus
 
-<link rel="profile" href="https://gmpg.org/xfn/11" />
-<link rel="pingback" href="http://zakilive.com/xmlrpc.php" />
-<meta name='contextly-page' id='contextly-page' content='{"url":"http:\/\/zakilive.com\/category\/acm\/algorithm\/graph\/dfs","type":"category","type_term":"DFS"}' />
-<style type="text/css">			.heateorSssInstagramBackground{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
-											.heateor_sss_horizontal_sharing .heateorSssSharing,.heateor_sss_standard_follow_icons_container .heateorSssSharing{
-							color: #fff;
-						border-width: 0px;
-			border-style: solid;
-			border-color: transparent;
+UVA online Judge Solution 100 - The 3n + 1 Problem in cpp. This is an easy problem and volume 1 first problem of UVA' name='description'/>
+<script type='application/ld+json'>{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://onlinejudgesolution.blogspot.com/", "potentialAction": { "@type": "SearchAction", "target": "http://onlinejudgesolution.blogspot.com/?q={search_term}", "query-input": "required name=search_term" } }</script>
+<meta content='UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus, Online Judge Solution: UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus, Online Judge Solution' name='keywords'/>
+<meta content='Online Judge Solution, OJ Solution, Online Judge Problem Solution, UVA Solution, URI Solution, SPOZ Solution, Programming problem Solution, Code Marshal Problem Solution, UVA Problem Solution' name='keywords'/>
+<link href='//fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'/>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+<link href='http://onlinejudgesolution.blogspot.com/feeds/posts/default' rel='alternate' title='Online Judge Solution - Atom' type='application/atom+xml'/>
+<link href='http://onlinejudgesolution.blogspot.com/feeds/posts/default?alt=rss' rel='alternate' title='Online Judge Solution - RSS' type='application/rss+xml'/>
+<link href='http://www.blogger.com/feeds/3933313570623671267/posts/default' rel='alternate' title='Online Judge Solution - Atom' type='application/atom+xml'/>
+<link href='http://onlinejudgesolution.blogspot.com/2017/04/uva-online-judge-solution-100-3n1.html' hreflang='x-default' rel='alternate'/>
+<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://plus.google.com/+ManirujjamanAkashChanel' rel='publisher'/>
+<link href='https://plus.google.com/+ManirujjamanAkashChanel' rel='author'/>
+<link href='https://plus.google.com/+ManirujjamanAkashChanel' rel='me'/>
+<meta content='AmzcjnOMQKdTqfDhdK9PRuHE5U8a8E5xA1NjqlTKW5g' name='google-site-verification'/>
+<meta content='398F1E0366334FB52D57E10A41A073EA' name='msvalidate.01'/>
+<meta content='Bangladesh' name='geo.placename'/>
+<meta content='Maniruzzaman Akash' name='Author'/>
+<meta content='general' name='rating'/>
+<meta content='880' name='geo.country'/>
+<!-- [ Social Media Meta Tag ] -->
+<meta content='UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus' property='og:title'/>
+<meta content='http://onlinejudgesolution.blogspot.com/2017/04/uva-online-judge-solution-100-3n1.html' property='og:url'/>
+<meta content='article' property='og:type'/>
+<meta content='Online Judge Solution' property='og:site_name'/>
+<meta content='https://3.bp.blogspot.com/-Hjc6_7njIRs/WIsN28cBbYI/AAAAAAAACL4/tyYVf_C1WGwqUEpqQAzvdvE0F3L7X-6pgCLcB/s125-c/Logo%2BPsd.png' property='og:image'/>
+<meta content='https://www.facebook.com/maniruzzaman.akash' property='article:author'/>
+<meta content='https://web.facebook.com/Maniruzzaman.Akash.blog' property='article:publisher'/>
+<meta content='CODE-APPLICATION-FACEBOOK' property='fb:app_id'/>
+<meta content='CODE-ADMIN-FACEBOOK' property='fb:admins'/>
+<meta content='en_US' property='og:locale'/>
+<meta content='en_GB' property='og:locale:alternate'/>
+<meta content='id_ID' property='og:locale:alternate'/>
+<meta content='summary' name='twitter:card'/>
+<meta content='Online Judge Solution: UVA Online Judge Solution - 100 - The 3n+1 Problem Solution in C Plus Plus' name='twitter:title'/>
+<meta content='USER-TWITTER' name='twitter:site'/>
+<meta content='USER-TWITTER' name='twitter:creator'/>
+<meta content='736d80b76cc8cf89dfc5c4b88d11ad7c' name='propeller'/>
+<style id='page-skin-1' type='text/css'><!--
+
+html,body,.section,.widget,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure{margin:0;padding:0}html{overflow-x:hidden}a{text-decoration:none;color:#000}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}.quickedit,.home-link{display:none}blockquote,q{quotes:"" ""}sup{vertical-align:super;font-size:smaller}code{font-family:'Courier New', Courier, monospace;font-size:12px;color:#272727}::selection{background:transparent;text-shadow:#000 0 0 2px}::-moz-selection{background:transparent;text-shadow:#000 0 0 2px}::-webkit-selection{background:transparent;text-shadow:#000 0 0 2px}::-o-selection{background:transparent;text-shadow:#000 0 0 2px}a img{border:none}ol,ul{padding:0;margin:0;text-align:left}ol li{list-style-type:decimal;padding:0 0 5px}ul li{list-style-type:disc;padding:0 0 5px}ul ul,ol ol{padding:0}#navbar-iframe,.navbar{height:0px;visibility:hidden;display:none}.feed-links,.Attribution,.post-footer-line.post-footer-line-1,.post-footer-line.post-footer-line-2,.post-footer-line.post-footer-line-3{display:none}.item-control{display:none !important}h2.date-header,h4.date-header{display:none;margin:1.5em 0 .5em}.status-msg-wrap{display:none}blockquote{padding:8px;background-color:#faebbc;border-top:1px solid #e1cc89;border-bottom:1px solid #e1cc89;margin:5px;background-image:url(http://1.bp.blogspot.com/-siy6EKYCLtM/U6X4AdKrr0I/AAAAAAAANDs/HCjRvuedDro/s1600/openquote1.gif);background-position:top left;background-repeat:no-repeat;text-indent:23px}blockquote p{display:block;background-image:url(http://3.bp.blogspot.com/-UjppXQI-ww0/U6X4IpheNiI/AAAAAAAAND0/PJhRvvhAWGU/s1600/closequote1.gif);background-repeat:no-repeat;background-position:bottom right}img{max-width:100%;vertical-align:middle;border:0}.widget iframe,.widget img{max-width:100%}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{color:#2e2e2e;font-family:'Roboto',sans-serif;font-size:14px;font-weight:normal;line-height:21px;background:#f8f8f8 url(https://4.bp.blogspot.com/-F1TjHfM859Y/V3AdhkmcKMI/AAAAAAAACME/E3mGPDKVvGoFueVXRvzMelQ32zDVvEu_gCLcB/s1600/bgdot.png) repeat fixed top left}#body-wrapper{max-width:1113px;margin:0 auto;background-color:#FFF;box-shadow:0 0 5px RGBA(0, 0, 0, 0.2)}.body-row{width:1063px}#content-wrapper{margin:0 auto;padding:20px 0 40px;overflow:hidden}#main-wrapper{float:left;width:67%;max-width:750px}#sidebar-wrapper{float:right;width:30%;max-width:330px}.ticker-wrap{display:block;text-align:center;margin:0 auto;padding:0 20px 0 20px;background:#2bbd7e;position:relative}.ticker-wrap .title{position:absolute;left:0;height:45px;font-size:15px;color:#fff;line-height:45px;font-weight:bold;overflow:hidden;padding:0 10px;background:#455A64;text-transform:uppercase}.ticker-wrap .title .fa{margin-right:10px;background:#fff;padding:5px 6px;border-radius:100%;color:#00c8d7}.ticker-wrap>span{display:inline-block;padding:0;font:700 13px 'roboto', sans-serif}.ticker-wrap>span>a{color:#fff;text-decoration:none}#ticker{height:45px;overflow:hidden;text-align:left;max-width:720px;padding-left:100px}#ticker ul{padding:0;margin:0;list-style:none}#ticker ul li{height:45px;white-space:nowrap;list-style:none}#ticker ul li h3{margin:0;font:700 16px 'roboto', sans-serif;line-height:45px}#ticker ul li h3 a{color:#fff;text-decoration:none;line-height:25px !important}.top-bar-social{height:45px;position:absolute;right:0;top:0}.top-bar-social li{display:inline;padding:0;float:left;margin-right:5px}.top-bar-social .widget ul{padding:0}.top-bar-social .LinkList ul{text-align:center;margin:0}.top-bar-social #social a{display:block;width:30px;height:45px;line-height:45px;font-size:15px;color:#eeeeee;transition:background 0.3s linear;-moz-transition:background 0.3s linear;-webkit-transition:background 0.3s linear;-o-transition:background 0.3s linear}.top-bar-social #social a:before{display:inline-block;font:normal normal normal 22px/1 FontAwesome;font-size:inherit;font-style:normal;font-weight:400;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.top-bar-social .bloglovin:before{content:"\f004"}.top-bar-social .facebook:before{content:"\f09a"}.top-bar-social .twitter:before{content:"\f099"}.top-bar-social .gplus:before{content:"\f0d5"}.top-bar-social .rss:before{content:"\f09e"}.top-bar-social .youtube:before{content:"\f167"}.top-bar-social .skype:before{content:"\f17e"}.top-bar-social .stumbleupon:before{content:"\f1a4"}.top-bar-social .tumblr:before{content:"\f173"}.top-bar-social .vine:before{content:"\f1ca"}.top-bar-social .stack-overflow:before{content:"\f16c"}.top-bar-social .linkedin:before{content:"\f0e1"}.top-bar-social .dribbble:before{content:"\f17d"}.top-bar-social .soundcloud:before{content:"\f1be"}.top-bar-social .behance:before{content:"\f1b4"}.top-bar-social .digg:before{content:"\f1a6"}.top-bar-social .instagram:before{content:"\f16d"}.top-bar-social .pinterest:before{content:"\f0d2"}.top-bar-social .delicious:before{content:"\f1a5"}.top-bar-social .codepen:before{content:"\f1cb"}.top-bar-social ul#social a:hover{color:#455A64;opacity:1}.header-wrap{background:#fff}#header-wrappers{color:#fff;padding:30px 0;margin:0 auto}#header-inner{background-position:left;background-repeat:no}.headerleft img{height:auto;max-height:100%;margin:0}
+.headerleft h1,.headerleft h1 a,.headerleft h1 a:hover,.headerleft h1 a:visited{font-family: Aclonica, cursive;color:#2bbd7e;font-size:52px;font-weight:normal;line-height:1.2em;margin:0;padding:0 0 5px;text-decoration:none;text-transform:uppercase;letter-spacing:1px}.headerleft h3{font-weight:400;margin:0;padding:0}
+.headerleft .description{color:#666;margin:0;padding:0 0 10px;text-transform:capitalize;text-align:center;text-indent:0;letter-spacing:1px}.headerleft{float:left;margin:0;padding:0;width:auto}.headerright{float:right;margin:0;padding:1px 0 0;width:730px}.headerleft .description span{border-top:1px solid rgba(241, 241, 241, 0.25);padding:5px 0 0}.selectnav{display:none}.tm-menu{font-weight:400;margin:0 auto;height:50px}ul#nav1{list-style:none;margin:0;padding:0}#menu .widget{display:none}#menu{height:50px;position:relative;text-align:center;z-index:15;margin:0 auto;background:#455A64;padding-right:50px}.menu-wrap{margin:0 auto;position:relative}#menu ul > li{position:relative;vertical-align:middle;display:inline-block;padding:0;margin:0}#menu ul > li:first-child{background:#2bbd7e}#menu ul > li > ul > li:first-child{background:transparent}#menu ul > li > a{color:#fff;font-size:14px;font-weight:600;line-height:50px;display:inline-block;text-transform:uppercase;text-decoration:none;letter-spacing:1px;margin:0;padding:0 12px}#menu ul > li > ul > li:first-child > a{padding-left:12px}#menu ul > li > ul{position:absolute;background:#4d4d4d;top:100%;left:0;min-width:180px;padding:0;z-index:99;margin-top:0;visibility:hidden;opacity:0;-webkit-transform:translateY(10px);-moz-transform:translateY(10px);transform:translateY(10px)}#menu ul > li > ul > li > ul{position:absolute;top:0;left:180px;width:180px;background:#5d5d5d;z-index:99;margin-top:0;margin-left:0;padding:0;border-left:1px solid #6d6d6d;visibility:hidden;opacity:0;-webkit-transform:translateY(10px);-moz-transform:translateY(10px);transform:translateY(10px)}#menu ul > li > ul > li{display:block;float:none;text-align:left;position:relative;border-bottom:1px solid;border-top:none;border-color:#8d8d8d}#menu ul > li > ul > li:last-child{border:0}#menu ul > li:hover{background-color:#2bbd7e}#menu ul > li > ul > li a{font-size:11px;display:block;color:#fff;line-height:35px;text-transform:uppercase;text-decoration:none;margin:0;padding:0 12px;border-right:0;border:0}#menu ul > li.parent > a:after{content:'\f107';font-family:FontAwesome;float:right;margin-left:5px}#menu ul > li:hover > ul,#menu ul > li > ul > li:hover > ul{opacity:1;visibility:visible;-webkit-transform:translateY(0);-moz-transform:translateY(0);transform:translateY(0)}#menu ul > li > ul > li.parent > a:after{content:'\f105';float:right}.ty-ran-yard{position:absolute;right:0;top:0;z-index:99}.ty-ran-yard span{list-style:none}.ty-ran-yard a.ran-sym{background-color:#2bbd7e;cursor:pointer;display:block;height:50px;text-align:center;position:relative;right:0;top:0;width:50px;border-radius:0;box-sizing:border-box}.ty-ran-yard a.ran-sym:hover{background-color:#6d6d6d}.ty-ran-yard a.ran-sym:before{color:#fff;content:'\f074';font-family:FontAwesome;font-size:16px;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:50px}.sidebar .widget{margin-bottom:20px;position:relative}.sidebar h2{position:relative;overflow:hidden;margin:0;font-size:18px;vertical-align:middle;padding:10px;border-left:4px solid #455A64;font-weight:700;background:#2bbd7e;color:#fff}.sidebar ul,.sidebar li{list-style-type:none;margin:0;padding:0}.sidebar .widget-content{padding:10px 0}article{padding:0}.post-outer{padding:0}.index .post-outer,.archive .post-outer{margin:0 0 20px 0;padding:0 0 20px 0;border-bottom:1px solid rgba(0,0,0,0.14)}.post{display:block;overflow:hidden;word-wrap:break-word;background:#ffffff}.post h2{margin-bottom:12px;line-height:30px;font-size:20px;font-weight:700}.post h2 a{color:#000;letter-spacing:1px}.post h2{margin:0 0 10px;padding:0}.post-head h1{color:#000;font-size:28px;font-weight:400;line-height:44px}.retitle h2{margin:0 0 8px;display:block}.post-body{margin:0px;padding:10px;font-size:14px;line-height:26px;box-sizing:border-box}.post-home-image{float:left;width:300px;height:220px;margin-right:20px;position:relative}.post-home-image .post-thumb{width:100%;height:220px;position:relative;display:block;overflow:hidden}.post-home-image .post-thumb img{width:100%;height:220px;display:block;padding:3px;box-sizing:border-box;border:1px solid #e6e6e6;object-fit:cover;transition:all .3s ease-out !important;-webkit-transition:all .3s ease-out !important;-moz-transition:all .3s ease-out !important;-o-transition:all .3s ease-out !important}.index .post-home-image .post-labels,.archive .post-home-image .post-labels{position:absolute;top:10px;left:10px;padding:8px 12px 6px;background:#455A64;color:#fff;font-size:12px;text-transform:uppercase;display:inline-block;z-index:9}.index .post-home-image .post-labels a,.archive .post-home-image .post-labels a{color:#fff}.date-header{color:#bdbdbd;display:block;font-size:12px;font-weight:400;line-height:1.3em;margin:0 !important;padding:0}.date-header a{color:#bdbdbd}.post-header{padding:10px}#meta-post{border:1px solid #f0f0f0;border-width:1px 0;padding:5px 0;font-size:13px}#meta-post i{margin-left:8px;color:#999}#meta-post a{color:#999}.post-meta{color:#bdbdbd;display:block;font-size:13px;font-weight:400;line-height:21px;margin:10px 0 0;padding:0}.post-meta a,.post-meta i{color:#CBCBCB}.post-timestamp{margin-left:5px}.label-head{margin-left:5px}.label-head a{padding-left:2px}.resumo{margin-top:10px;color:#111}.resumo span{display:block;margin-bottom:8px;font-size:15.4px;line-height:1.5;text-align:justify}.date-header .read-more{background:#2bbd7e;padding:5px 12px !important;display:inline-block;vertical-align:middle;margin:10px 0 0;font-size:12px;text-transform:capitalize;border-radius:2px;color:#f7f7f7;font-weight:bold;white-space:nowrap}.read-more:hover{background:#455A64;color:#fff}.post-body img{max-width:100%;padding:10px 0;position:relative;margin:0 auto}.post h3{font-size:18px;margin-top:20px;margin-bottom:10px;line-height:1.1,color: #fa1313;font-weight: bold;}.second-meta{display:none}.comment-link{white-space:normal}#blog-pager{clear:both;text-align:center;margin:0}.index .blog-pager,.index #blog-pager{display:block}.index .blog-pager,.index #blog-pager,.archive .blog-pager,.archive #blog-pager{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;padding:15px 0 5px;text-align:center}.showpageNum a,.showpage a,#blog-pager-newer-link a,#blog-pager-older-link a{color:#fff;background-color:#2bbd7e;font-size:14px;font-weight:400;line-height:24px;margin-right:5px;overflow:hidden;padding:4px 10px;text-decoration:none}.showpageNum a:hover,.showpage a:hover,#blog-pager-newer-link a:hover,#blog-pager-older-link a:hover{decoration:none;background-color:#455A64}.showpageOf{display:none;font-size:0}.showpagePoint{color:#fff;background-color:#455A64;font-size:14px;font-weight:400;line-height:24px;margin-right:5px;overflow:hidden;padding:4px 10px;text-decoration:none}#post-pager .blog-pager-older-link:hover,#post-pager .blog-pager-newer-link:hover{color:#455A64;background:inherit}#post-pager{clear:both;float:left;display:block;width:100%;box-sizing:border-box;margin:15px 0}#post-pager .blog-pager-older-link,#post-pager .blog-pager-newer-link{border:0;text-align:right;background:none;color:#2bbd7e}#post-pager .blog-pager-newer-link{border:0;text-align:left}#post-pager #blog-pager-newer-link,#post-pager #blog-pager-older-link{width:50%}#post-pager a b{display:block;padding:0 0 5px;font-weight:700;letter-spacing:1px;font-size:15px;color:#455A64}#post-pager a span{text-transform:capitalize}#post-pager .blog-pager-older-link,#post-pager .blog-pager-newer-link{padding:0;display:block}.item #blog-pager{display:none;height:0;opacity:0;visibility:hidden}.ty-author-box{border:1px solid #f2f2f2;background:#f8f8f8;overflow:hidden;padding:10px;margin:10px 0}.ty-author-box img{float:left;margin-right:10px;object-fit:cover}.ty-author-box p{padding:0;-webkit-margin-before:0;-webkit-margin-after:0}.ty-author-box b{font-weight:700;font-style:normal;letter-spacing:1px;font-size:20px}.item .post-footer .share-box{position:relative;padding:10px 0}.item .post-footer .share-title{color:#aeaeae;display:inline-block;padding-bottom:7px;font-size:12px;font-weight:700;position:relative;top:2px;text-transform:uppercase}.item .post-footer .share-art{display:inline-block;padding:0;padding-top:0;font-size:12px;font-weight:400;text-transform:capitalize;letter-spacing:1px}.item .post-footer .share-art a{color:#fff;padding:3px 8px;margin-left:4px;border-radius:2px;display:inline-block;margin-right:0;background:#010101}.item .post-footer .share-art a:hover{color:#fff}.item .post-footer .share-art .fac-art{background:#3b5998}.item .post-footer .share-art .fac-art:hover{background:rgba(49,77,145,0.7)}.item .post-footer .share-art .twi-art{background:#00acee}.item .post-footer .share-art .twi-art:hover{background:rgba(7,190,237,0.7)}.item .post-footer .share-art .goo-art{background:#db4a39}.item .post-footer .share-art .goo-art:hover{background:rgba(221,75,56,0.7)}.item .post-footer .share-art .pin-art{background:#CA2127}.item .post-footer .share-art .pin-art:hover{background:rgba(202,33,39,0.7)}.item .post-footer .share-art .lin-art{background:#0077B5}.item .post-footer .share-art .lin-art:hover{background:rgba(0,119,181,0.7)}#subscribe-box{background-color:#f7f7f7;margin:0;padding:20px;overflow:hidden;border:8px solid #f0f0f0}#subscribe-box h4{color:#827459;font-size:16px;margin-bottom:20px;text-align:center;text-transform:uppercase}#subscribe-box .emailfield{margin:auto;text-align:center}#subscribe-box .emailfield form{margin:0}#subscribe-box .emailfield input{padding:12px;color:#bcc4ca;border:1px solid #ebd099;font-size:14px;margin-bottom:10px}#subscribe-box .emailfield input:focus{color:#454545;outline:none;border-color:#d5bc88}#subscribe-box .emailfield .submitbutton{background-color:#f8695f;color:#fff;margin:0;font-size:14px;letter-spacing:.7px;text-transform:uppercase;cursor:pointer;border:0;transition:all .3s}#subscribe-box .emailfield .submitbutton:active,#subscribe-box .emailfield .submitbutton:hover{background-color:#e0594f;color:#fff}#related-posts{margin-bottom:10px;padding:10px 0}.related li{width:24%;display:inline-block;height:auto;min-height:184px;float:left;margin-right:10px;overflow:hidden;position:relative}.related li h3{margin-top:0}.related-thumb{width:100%;height:100px;overflow:hidden;border-radius:2px}.related li .related-img{width:100%;height:100px;display:block;position:relative;transition:all .3s ease-out !important;-webkit-transition:all .3s ease-out !important;-moz-transition:all .3s ease-out !important;-o-transition:all .3s ease-out !important}.related li .related-img:hover{-webkit-transform:scale(1.1) rotate(-1.5deg) !important;-moz-transform:scale(1.1) rotate(-1.5deg) !important;transform:scale(1.1) rotate(-1.5deg) !important;transition:all .3s ease-out !important;-webkit-transition:all .3s ease-out !important;-moz-transition:all .3s ease-out !important;-o-transition:all .3s ease-out !important}.related-title a{font-size:12px;line-height:1.4em;padding:10px 0 0;font-weight:400;font-style:normal;letter-spacing:1px;color:#2bbd7e;display:block}.related li:nth-of-type(4),.related li:nth-of-type(8),.related li:nth-of-type(12){margin-right:0}.related .related-tag{display:none}.related-overlay{position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;background-color:rgba(40,35,40,0.05)}.related-content{display:block;bottom:0;padding:0px 0px 11px;width:100%;line-height:1.2em;box-sizing:border-box;z-index:2}.related .related-content .recent-date{display:none}.recent-date:before,.p-date:before{content:'\f017';font-family:fontawesome;margin-right:5px}.comment-form{overflow:hidden}iframe.blogger-iframe-colorize,iframe.blogger-comment-from-post{height:283px !important}.comments-title{position:relative;clear:both;z-index:1;margin:0;line-height:33px}.comments-title h2{display:inline-block;position:relative;background-color:#fff;color:#1c1c1c;font-size:18px;letter-spacing:-.4px;text-transform:uppercase;font-weight:700;z-index:1;margin:0;padding-right:15px}.comments-title:after{content:"";position:absolute;z-index:0;top:14px;left:0;width:100%;height:5px;background-color:#F5F5F5}.comments{clear:both;margin:0;color:#1c1c1c;background:#ffffff;padding:0 10px}.comments h4{color:#000;font-size:14px;padding:5px 20px;font-weight:700;letter-spacing:1.5px;text-transform:Uppercase;position:relative;text-align:center;background:#ffffff;z-index:1;margin-bottom:15px}.comments h4:after{content:'';position:absolute;bottom:0;left:50%;width:40px;height:2px;background:#000;margin-left:-20px}.comments .comments-content{margin:0;padding:0}.comments .comments-content .comment{margin-bottom:0;padding-bottom:8px}.comments .comments-content .comment:first-child{padding-top:0}.facebook-tab,.fb_iframe_widget_fluid span,.fb_iframe_widget iframe{width:100% !important}.comments .item-control{position:static}.comments .avatar-image-container{float:left;overflow:hidden;position:absolute}.comments .avatar-image-container,.comments .avatar-image-container img{height:45px;max-height:45px;width:45px;max-width:45px;border-radius:0}.comments .comment-block{overflow:hidden;padding:0 0 10px}.comments .comment-block,.comments .comments-content .comment-replies{margin-left:60px;margin-top:0}.comments .comments-content .inline-thread{padding:0}.comments .comment-actions{float:left;width:100%;position:relative;margin:0}.comments .comments-content .comment-header{font-size:14px;display:block;overflow:hidden;clear:both;margin:0 0 3px;padding:0 0 5px;border-bottom:1px dotted #f5f5f5}.comments .comments-content .user{font-style:normal;font-weight:500;display:block;font-size:16px}.comments .comments-content .icon.blog-author{display:none}.comments .comments-content .comment-content{float:left;text-align:left;font-size:13px;line-height:1.4em;color:#656565}.comments .comment .comment-actions a{margin-right:5px;padding:2px 5px;color:#fff;font-weight:400;background-color:#000;font-size:10px}.comments .comment .comment-actions a:hover{color:#fff;background-color:#455A64;text-decoration:none}.comments .comments-content .datetime{color:#999;float:left;font-size:11px;position:relative;font-style:italic;margin:2px 0 0;display:block}.comments .comments-content .datetime:before{content:'\f017';font-family:fontawesome;font-style:normal;margin-right:3px}.comments .comments-content .comment-header a{color:inherit}.comments .comments-content .comment-header a:hover{color:#455A64}.comments .thread-toggle{margin-bottom:4px}.comments .thread-toggle .thread-arrow{height:7px;margin:0 3px 2px 0}.comments .thread-expanded{padding:8px 0 0}.comments .comments-content .comment-thread{margin:0}.comments .continue a{padding:0 0 0 60px;font-weight:400}.comments .comments-content .loadmore.loaded{margin:0;padding:0}.comments .comment-replybox-thread{margin:0}#lower{margin:auto;padding:0px 0px 10px 0px;width:100%;background:#2bbd7e;border-bottom:1px solid #222222}#lower-wrapper{margin:auto;padding:20px 0px 20px 0px}#lowerbar-wrapper{float:left;margin:0px 5px auto;padding-bottom:20px;width:32%;text-align:justify;color:#ddd;line-height:1.6em;word-wrap:break-word;overflow:hidden;max-width:375px}.lowerbar{margin:0;padding:0}.lowerbar .widget{margin:0;padding:10px 20px 0px 20px;box-sizing:border-box}.lowerbar h2{position:relative;overflow:hidden;margin:0;font-size:18px;vertical-align:middle;padding:0 0 10px 0;border-bottom:1px solid rgba(0, 200, 215, 0.18);font-weight:700;color:#fff;clear:both}.lowerbar h2:after{content:'';display:inline-block;position:absolute;height:15px;top:0;margin:3px 0 12px 10px;width:100%;background:url(http://4.bp.blogspot.com/-R2WTW6O9E1o/VX7dqIGT1eI/AAAAAAAACc4/pyvQDMMLX3E/s1600/repeat-bg.png)repeat}.lowerbar ul{margin:0 auto;padding:0;list-style-type:none}.lowerbar li{display:block;line-height:1.6em;margin-left:0 !important;list-style-type:none}.lowerbar li a{text-decoration:none;color:#DBDBDB}.lowerbar li a:hover{text-decoration:none}.lowerbar li:hover{display:block}.lowerbar .PopularPosts ul li a,.lowerbar,.lowerbar .ty-bonus .ty-bonos-entry a,.lowerbar .tyard-komet a{color:#fff}.lowerbar .PopularPosts .widget-content ul li{border-bottom:1px solid rgb(51, 51, 51);border-top:0}.lowerbar .PopularPosts .widget-content ul li:last-child{border:0}.lowerbar .widget-content{padding:10px 0}#ty_footer{background:#2d2d2d;color:#fff;font-weight:300;padding:15px 0px}.ty-copy-container{margin:0 auto;overflow:hidden}.ty_footer_copyright a{color:#fff}.ty_footer_copyright{text-align:center;display:block;line-height:30px}.sosmedarl-info h4{background:transparent;position:relative;padding:0;margin:0;border:0;text-align:center;font-size:120%}.sosmedarl-img{position:relative;max-height:200px;overflow:hidden}.sosmedarl-img img{max-width:100%;width:100%;transition:all .6s}.sosmedarl-img:hover img{transform:scale(1.2) rotate(-10deg)}.sosmedarl-img:before{content:'';background:rgba(0, 0, 0, 0.3);position:absolute;top:0;left:0;right:0;bottom:0;z-index:2;transition:all .3s}.sosmedarl-img:hover:before{background:rgba(0, 0, 0, 0.6)}.aboutfloat-img{text-align:center}.sosmedarl-float{text-align:center;display:inline-block}.sosmedarl-float a{background:transparent;color:#2bbd7e;padding:8px 14px;z-index:2;display:table-cell;font-size:90%;text-transform:uppercase;vertical-align:middle;border:2px solid #455A64;border-radius:3px;transition:all .3s}.sosmedarl-float:hover a{background:#e74c3c;color:#fff;border-color:transparent}.sosmedarl-float a i{font-weight:normal;margin:0 5px 0 0}.sosmedarl-wrpicon{display:block;margin:15px auto 0;position:relative}.sosmedarl-wrpicon .extender{width:100%;display:block}.extender{text-align:center;font-size:16px}.extender .sosmedarl-icon{display:inline-block;border:0;margin:0;padding:0;width:32%}.extender .sosmedarl-icon a{background:#ccc;display:inline-block;font-weight:400;color:#fff;padding:0 12px;line-height:32px;border-radius:3px;font-size:12px;width:100%}.extender .sosmedarl-icon i{font-family:fontawesome;margin:0 3px 0 0}.sosmedarl-icon.fbl a{background:#3b5998}.sosmedarl-icon.twitt a{background:#19bfe5}.sosmedarl-icon.crcl a{background:#d64136}.sosmedarl-icon.fbl a:hover,.sosmedarl-icon.twitt a:hover,.sosmedarl-icon.crcl a:hover{background:#404040}.extender .sosmedarl-icon:hover a,.extender .sosmedarl-icon a:hover{color:#fff}.sosmedarl-info{margin:10px 0;font-size:13px;text-align:center}.sosmedarl-info p{margin:5px 0}.sosmedarl-info h4{margin-bottom:10px;font-size:16px;text-transform:uppercase;color:#444;font-weight:700}.sosmedarl-info h4 span{position:relative;display:inline-block;padding:0 10px;margin:0 auto}select#BlogArchive1_ArchiveMenu{width:100%;padding:10px;border-color:#777}#adwidegt1 .widget,#adwidegt2 .widget,#adwidegt3 .widget{width:728px;max-height:90px;padding:0;max-width:100%;box-sizing:border-box;display:none}#adwidegt1 .widget{margin:15px auto 10px !important;display:block !important}#adwidegt2 .widget{margin:15px auto 0 !important}#adwidegt1 .widget h2,#adwidegt2 .widget h2,#adwidegt3 .widget h2{display:none;visibility:hidden}.ads-posting{margin:10px 0 0}.post-footer .ads-posting{margin:15px 0 0}.contact-form-name,.contact-form-email,.contact-form-email-message,.contact-form-widget{max-width:none}.contact-form-name,.contact-form-email,.contact-form-email-message{background-color:#EBEBEB;border:1px solid #ccc}.contact-form-button-submit{max-width:none;width:100%;height:35px;border:0;background-image:none;background-color:#455A64 !important;cursor:pointer;font-style:normal;font-weight:400}.contact-form-name:focus,.contact-form-email:focus,.contact-form-email-message:focus{border:0;box-shadow:none}.contact-form-name:hover,.contact-form-email:hover,.contact-form-email-message:hover{border:0}.contact-form-button-submit:hover{background-color:#303030;background-image:none;border:0}.sidebar .FollowByEmail > h3.title,.sidebar .FollowByEmail .title-wrap{margin-bottom:0}#FollowByEmail1{clear:both}.FollowByEmail td{width:100%;float:left;box-sizing:border-box}.FollowByEmail .follow-by-email-inner .follow-by-email-submit{margin-left:0;width:100%;border-radius:0;height:30px;font-size:11px;color:#fff;background-color:#455A64;text-transform:uppercase;font-weight:700;letter-spacing:1px}.FollowByEmail .follow-by-email-inner .follow-by-email-submit:hover{background-color:#000}.FollowByEmail .follow-by-email-inner .follow-by-email-address{padding-left:10px;height:30px;border:1px solid #FFF;margin-bottom:5px;box-sizing:border-box;font-size:11px;font-family:inherit}.FollowByEmail .follow-by-email-inner .follow-by-email-address:focus{border:1px solid #FFF}.FollowByEmail .widget-content{background-color:#2b2b2b;box-sizing:border-box;padding:10px}.lowerbar .FollowByEmail .widget-content{margin-top:10px}.FollowByEmail .widget-content:before{content:"Enter your email address to subscribe to this blog and receive notifications of new posts by email.";font-size:14px;color:#f2f2f2;line-height:1.4em;margin-bottom:5px;display:block;padding:0 2px}.sidebar .PopularPosts .widget-content ul li:first-child,.sidebar .ty-bonus .ty-wow:first-child{padding-top:0;border-top:0}.sidebar .PopularPosts .widget-content ul li:last-child,.sidebar .ty-bonus .ty-wow:last-child{padding-bottom:0}.cloud-label-widget-content{display:inline-block;text-align:left}.cloud-label-widget-content .label-size{display:inline-block;float:left;font-size:12px;line-height:normal;margin:0 5px 5px 0;opacity:1}.cloud-label-widget-content .label-size a{background:#efefef;color:#000;float:left;font-weight:400;line-height:100%;margin:0;padding:8px 10px;text-transform:uppercase;transition:all .6s;letter-spacing:1.5px}.cloud-label-widget-content .label-size a:hover,.cloud-label-widget-content .label-size a:active{background:#455A64;color:#fff}.cloud-label-widget-content .label-size .label-count{display:none}.list-label-widget-content li{display:block;padding:8px 0;border-bottom:1px solid #ececec;position:relative}.list-label-widget-content li a:before{content:'\203a';position:absolute;left:0px;top:5px;font-size:22px;color:#10b765}.lowerbar .list-label-widget-content li a{color:#fff}.lowerbar .list-label-widget-content li{border-bottom:1px solid rgb(51, 51, 51);border-top:0}.lowerbar .list-label-widget-content li:last-child{border:0}.list-label-widget-content li a{color:#282828;font-size:14px;padding-left:20px;font-weight:400;text-transform:capitalize;letter-spacing:1.5px}.list-label-widget-content li span:last-child{color:#f6b2ca;font-size:12px;font-weight:700;position:absolute;top:9px;right:0}.PopularPosts .item-thumbnail{margin:0 15px 0 0 !important;width:80px;height:60px;float:left;overflow:hidden;position:relative}.PopularPosts .item-thumbnail a{position:relative;display:block;overflow:hidden;line-height:0}.PopularPosts ul li img{width:90px;height:65px;object-fit:cover;padding:0;transition:all .3s ease}.PopularPosts .widget-content ul li{overflow:hidden;padding:10px 0;border-top:1px solid #f2f2f2}.sidebar .PopularPosts .widget-content ul li:first-child,#sidetabs .PopularPosts .widget-content ul li:first-child{padding-top:0;border-top:0}.sidebar .PopularPosts .widget-content ul li:last-child,.sidebar .ty-bonus .ty-wow:last-child,.tab-widget .PopularPosts .widget-content ul li:last-child,.tab-widget .ty-bonus .ty-wow:last-child{padding-bottom:0}.PopularPosts ul li a{color:#2bbd7e;font-weight:400;font-size:13px;line-height:1.4em;transition:color .3s;letter-spacing:1.5px}.PopularPosts ul li a:hover{color:#a0d3db}.PopularPosts .item-title{margin:0 0 4px;padding:0;line-height:0}.item-snippet{display:none;font-size:0;padding-top:0}.PopularPosts ul{counter-reset:popularcount;margin:0;padding:0}.PopularPosts .item-thumbnail::before{background:rgba(0, 0, 0, 0.3);bottom:0px;content:"";height:100px;width:100px;left:0px;right:0px;margin:0px auto;position:absolute;z-index:3}@media only screen and (max-width: 1200px){.body-row{width:96% !important;margin:0 auto;float:none}.headerright,.headerleft{float:none;width:100%;text-align:center;height:auto;margin:0 auto;clear:both}.headerleft img{margin:auto;padding-bottom:15px}.headerright{margin:10px auto 0}}@media only screen and (max-width: 980px){.top-bar-social{position:static}#main-wrapper,#sidebar-wrapper,#lowerbar-wrapper{float:none;clear:both;width:100%;margin:0 auto}#main-wrapper{max-width:100%}#sidebar-wrapper{padding-top:20px}#nav1,#nav{display:none}.selectnav{width:auto;color:#222;background:#f4f4f4;border:1px solid rgba(255,255,255,0.1);position:relative;border:0;padding:6px 10px !important;margin:5px 0}.selectnav{display:block;width:100%;max-width:200px}.tm-menu .selectnav{display:inline-block;margin:10px 0 0 10px}#menu{text-align:left}}@media screen and (max-width: 880px){.item #content-wrapper{padding:0 0 30px}}@media only screen and (max-width: 768px){.top-bar-social,.bottom-bar-social{float:none;width:100%;clear:both;overflow:hidden}.top-bar-menu{float:none;width:100%;clear:both;margin-top:0;margin-bottom:10px;text-align:center}.top-bar-social li,.bottom-bar-social li{display:inline-block;float:none}.selectnav{display:inline-block}#search-bar{display:none}.ops-404{width:80% !important}.title-404{font-size:160px !important}#post-pager #blog-pager-newer-link{margin:0 auto 10px}#post-pager #blog-pager-older-link,#post-pager #blog-pager-newer-link{float:none;clear:both;margin:0 auto;display:block;width:100%}.post-home-image{float:none;width:100%;margin-bottom:20px;position:relative}.item .post-footer .share-art a span{display:none}.related li{width:48%}.related li:nth-child(2){margin-right:0}#meta-post{text-align:center}.index .post,.archive .post{text-align:center}.ty_footer_copyright{text-align:center;display:block;clear:both}}@media only screen and (max-width: 620px){.ty-post-share li{width:50%}}@media only screen and (max-width: 480px){.ticker-wrap .title{display:none}#ticker{padding:0}.index .post h2,.archive .post h2{line-height:34px;font-size:23px}h1.post-title{font-size:22px;margin-bottom:10px}.related li{width:100%;margin-right:0}#meta-post{display:inline-block}#meta-post .post-labels{display:block;margin:0 0 10px;clear:both}.blog-pager-newer-link .pager-title,.blog-pager-newer-link .pager-heading,.blog-pager-older-link .pager-title,.blog-pager-older-link .pager-heading{display:none}.blog-pager-older-link .post-nav-icon,.blog-pager-newer-link .post-nav-icon{line-height:40px;width:100%}.other-meta .other-meta-desc,.other-meta .other-meta-read{float:none;display:block;text-align:center}.share-title{display:none}.social-btns{float:none;text-align:center}#sidebar-wrapper{max-width:100%}.index .post-outer{padding:0 0 10px 0}.ty-copy-container{text-align:center}.temp-cred{float:none;display:block;clear:both;margin:5px 0 0}.ty_footer_copyright{float:none;display:block;clear:both}}@media only screen and (max-width: 360px){.title-404{font-size:150px !important}.Header .description p,.showpageOf{display:none}}@media only screen and (max-width: 300px){#sidebar-wrapper{display:none}.related-thumb{width:100%;float:none}.archive .post h2,.index .post h2{line-height:29px !important;font-size:15px !important}article{overflow:hidden}#blog-pager{padding:0;margin:0}.item #blog-pager{margin:0 0 15px}.index .resumo span,.archive .resumo span,.ty-author-box img,.breadcrumbs{display:none}.ty-author-box ul li a{padding:0;background:none}.ops-404{font-size:20px !important}.title-404{font-size:120px !important}h1.post-title{font-size:17px}.top-bar-social #social a{width:24px;height:24px;line-height:24px}.top-bar-menu,.ty-ran-yard{display:none}.ty-post-share li{width:100%}.comments .comments-content .comment-header{width:100%;float:none;clear:both;margin:0;padding:0}.comments .comments-content .comment-header{width:100%;float:none;clear:both;margin:0px 0 0px -35px;padding:0}}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+/*------Layout (No Edit)----------*/
+body#layout #body-wrapper{padding:0;width:800px}body#layout .section h4{color:#333 !important;text-align:center;text-transform:uppercase;letter-spacing:1.5px}body#layout #header-wrappers{padding:0}body#layout .tm-menu{height:auto}body#layout #menu{display:block;visibility:visible;height:auto}body#layout #menu .widget{display:block;visibility:visible}body#layout .top-bar-social{height:auto}body#layout .headerleft{width:280px}body#layout .headerright{width:440px}body#layout #content-wrapper{margin:0 auto}body#layout #main-wrapper{float:left;width:70%;margin:0;padding:0}body#layout #sidebar-wrapper{float:right;width:30%;margin:0;padding:5px 0 0;background-color:#f8e244 !important}body#layout #sidebar-wrapper .section{background-color:#fff;border:1px solid #fff}body#layout #sidebar-wrapper .section .widget-content{border-color:#5a7ea2 !important}body#layout #sidebar-wrapper .section .draggable-widget .widget-wrap2{background-color:#5a7ea2 !important}body#layout #main-wrapper #main{margin-right:4px;background-color:#5a7ea2;border-color:#34495e}body#layout #main-wrapper #main h4{color:#fff !important}body#layout .layout-widget-description{display:none !important}body#layout #Blog1 .widget-content{border-color:#34495e}body#layout .FollowByEmail .widget-content:before,body#layout #ty_footer{display:none}
+/*------Layout (end)----------*/
+--></style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+//<![CDATA[
+//CSS Ready
+function loadCSS(e, t, n) {
+    "use strict";
+    var i = window.document.createElement("link");
+    var o = t || window.document.getElementsByTagName("script")[0];
+    i.rel = "stylesheet";
+    i.href = e;
+    i.media = "only x";
+    o.parentNode.insertBefore(i, o);
+    setTimeout(function() {
+        i.media = n || "all"
+    })
+}
+loadCSS("//fonts.googleapis.com/css?family=Roboto:400,400i,700|Bungee+Inline");
+loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+//]]>
+</script>
+<style type='text/css'>
+.author-image{
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+  }
+.margin-top-10{
+			margin-top: 10px;
 		}
-				.heateor_sss_horizontal_sharing .heateorSssTCBackground{
-			color:#666;
-		}
-				.heateor_sss_horizontal_sharing .heateorSssSharing:hover,.heateor_sss_standard_follow_icons_container .heateorSssSharing:hover{
-						border-color: transparent;
-		}
-		.heateor_sss_vertical_sharing .heateorSssSharing,.heateor_sss_floating_follow_icons_container .heateorSssSharing{
-							color: #fff;
-						border-width: 0px;
-			border-style: solid;
-			border-color: transparent;
-		}
-				.heateor_sss_vertical_sharing .heateorSssTCBackground{
-			color:#666;
-		}
-				.heateor_sss_vertical_sharing .heateorSssSharing:hover,.heateor_sss_floating_follow_icons_container .heateorSssSharing:hover{
-						border-color: transparent;
-		}
-		
-		@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}</style><link rel='dns-prefetch' href='//www.dropbox.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Syed Ahmed Zaki &raquo; Feed" href="http://zakilive.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Syed Ahmed Zaki &raquo; Comments Feed" href="http://zakilive.com/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Syed Ahmed Zaki &raquo; DFS Category Feed" href="http://zakilive.com/category/acm/algorithm/graph/dfs/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/zakilive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+div {
+    font-size: 17px;
+}
+a {
+    text-decoration: none;
+    color: #1c9a64;
+    font-weight: bold;
+}
+a:hover {
+    color: #FF5722;
+    padding-left: 1px;
+    transition: inherit;
+}
+.PopularPosts .widget-content ul li:hover {
+    background: #f8f5f0;
+}
+.PopularPosts ul li a:hover {
+    color: #FF5722;
+    text-decoration: none;
+    padding-left: 2px;
+	transition: color .3s;
+}
+.PopularPosts ul li a {
+    color: #188053;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4em;
+    transition: color .3s;
+    letter-spacing: 1.5px;
+}
+pre {
+    font-size: 16px;
+    color: #333;
+    background-color: #efefef;
+    border: 1px solid #2bbd7e;
+    border-radius: 0px;
+    padding: 15px;
+}
+::selection {
+  background: #2bbd7e; /* WebKit/Blink Browsers */
+text-shadow: transparent 0 0 2px;
+}
+::-moz-selection {
+  background: #2bbd7e; /* Gecko Browsers */
+text-shadow: transparent 0 0 2px;
+}
+.contact-form-name, .contact-form-email, .contact-form-email-message {
+    background-color: #EBEBEB;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 10px;
+    color: #057846;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-form-name:focus, .contact-form-email:focus, .contact-form-email-message:focus{
+	border : 1px solid gray;
+  }
+.contact-form-error-message-with-border {
+    background: rgba(255, 0, 0, 0.71);
+    border: 1px solid #f0c36d;
+    bottom: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-left: 32%;
+    margin-right: 10%;
+    margin-top: 5px;
+    opacity: .8;
+    border-radius: 10px;
+    position: static;
+    text-align: center;
+    padding: 10px;
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2bbd7e;
+    padding: 10px;
+}
+ol, ul {
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+}
+.related-title a {
+    font-size: 12px;
+    line-height: 1.4em;
+    padding: 10px 0 0;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #000;
+    display: block;
 }
 </style>
-	<link rel='stylesheet' id='wp-quicklatex-format-css'  href='http://zakilive.com/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-css'  href='http://zakilive.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://zakilive.com/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=_2.7.2_beta' type='text/css' media='all' />
-<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://zakilive.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='http://zakilive.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='quotescollection-block-quotes-css'  href='http://zakilive.com/wp-content/plugins/quotes-collection/blocks/quotes/style.css?ver=1551878839' type='text/css' media='all' />
-<link rel='stylesheet' id='quotescollection-block-random-quote-css'  href='http://zakilive.com/wp-content/plugins/quotes-collection/blocks/random-quote/style.css?ver=1551878839' type='text/css' media='all' />
-<link rel='stylesheet' id='ultimeter-css'  href='http://zakilive.com/wp-content/plugins/ultimeter/public/assets/css/ultimeter-public.css?ver=2.5.0' type='text/css' media='all' />
-<link rel='stylesheet' id='ultimeter-legacy-css'  href='http://zakilive.com/wp-content/plugins/ultimeter/legacy/public/css/ultimeter-public.css?ver=2.5.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-components-css'  href='http://zakilive.com/wp-includes/css/dist/components/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-editor-font-css'  href='https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-editor-css'  href='http://zakilive.com/wp-includes/css/dist/block-editor/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-nux-css'  href='http://zakilive.com/wp-includes/css/dist/nux/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-editor-css'  href='http://zakilive.com/wp-includes/css/dist/editor/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='ultimeter-gutenberg-block-css'  href='http://zakilive.com/wp-content/plugins/ultimeter/gutenberg/assets/css/ultimeter-gutenberg-block.css?ver=2.5.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wplinkpreview-style-css'  href='http://zakilive.com/wp-content/plugins/wp-link-preview/wplinkpreview.css?ver=20120208' type='text/css' media='all' />
-<link rel='stylesheet' id='quotescollection-css'  href='http://zakilive.com/wp-content/plugins/quotes-collection/css/quotes-collection.css?ver=2.5.2' type='text/css' media='all' />
-<link rel='stylesheet' id='coraline-css'  href='http://zakilive.com/wp-content/themes/coraline/style.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='heateor_sss_frontend_css-css'  href='http://zakilive.com/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.14' type='text/css' media='all' />
-<link rel='stylesheet' id='heateor_sss_sharing_default_svg-css'  href='http://zakilive.com/wp-content/plugins/sassy-social-share/admin/css/sassy-social-share-svg.css?ver=3.3.14' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='http://zakilive.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.12' type='text/css' media='all' />
-<link rel='stylesheet' id='bar_styles-css'  href='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/bar/sbar.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='circle_styles-css'  href='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.css?ver=5.5.3' type='text/css' media='all' />
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/wp-captcha-booster/assets/global/plugins/custom/js/front-end-script.js?ver=5.5.3' id='captcha-booster-front-end-script.js-js'></script>
-<script type='text/javascript' id='crayon_js-js-extra'>
-/* <![CDATA[ */
-var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/zakilive.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
-var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta' id='crayon_js-js'></script>
-<script type='text/javascript' src='https://www.dropbox.com/static/api/2/dropins.js' id='dropboxjs' data-app-key='' id='dropboxjs-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/ultimeter/public/assets/js/ultimeter-public.js?ver=2.5.0' id='ultimeter-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/ultimeter/legacy/public/js/ultimeter-public.js?ver=2.5.0' id='ultimeter-legacy-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
-<script type='text/javascript' id='wp-polyfill-js-after'>
-( 'fetch' in window ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="http://zakilive.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/i18n.min.js?ver=bb7c3c45d012206bfcd73d6a31f84d9e' id='wp-i18n-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.15' id='lodash-js'></script>
-<script type='text/javascript' id='lodash-js-after'>
-window.lodash = _.noConflict();
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/vendor/react.min.js?ver=16.9.0' id='react-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=16.9.0' id='react-dom-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/escape-html.min.js?ver=f7b0e4c8bb987c1ab79bdda0d9db465b' id='wp-escape-html-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/element.min.js?ver=d061952232722fcef7dbe8a686d9996f' id='wp-element-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/autop.min.js?ver=762a290d38a892cf7a6a0413600eda07' id='wp-autop-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/blob.min.js?ver=65d313a41f95f4c2ea65820c3f1cad27' id='wp-blob-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/block-serialization-default-parser.min.js?ver=22c85d6c5f095fa70bc1e81f823454da' id='wp-block-serialization-default-parser-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/is-shallow-equal.min.js?ver=faf996f5d8657ed8cb4e326307229895' id='wp-is-shallow-equal-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/priority-queue.min.js?ver=25df4fcfc831934f96ee620ba97b8d72' id='wp-priority-queue-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/compose.min.js?ver=c4775e2aa9288586791e26a980eff851' id='wp-compose-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/hooks.min.js?ver=b4778690e29d8a2b7518413652ba30c4' id='wp-hooks-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/deprecated.min.js?ver=99b042a92d284c1276e553789c674cab' id='wp-deprecated-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/redux-routine.min.js?ver=9c464c6fba42fc0112f5feedb4939fa6' id='wp-redux-routine-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/data.min.js?ver=75f90354ddff4acd5b0b4026454037ca' id='wp-data-js'></script>
-<script type='text/javascript' id='wp-data-js-after'>
-( function() {
-	var userId = 0;
-	var storageKey = "WP_DATA_USER_" + userId;
-	wp.data
-		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
-	wp.data.plugins.persistence.__unstableMigrate( { storageKey: storageKey } );
-} )();
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/dom.min.js?ver=3f7b757d117b8e53e66943297e96bf38' id='wp-dom-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/html-entities.min.js?ver=75dab3db5644768cfaaf16da58993afb' id='wp-html-entities-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/primitives.min.js?ver=29a6188bba37f7dd03ab293172d040cd' id='wp-primitives-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/shortcode.min.js?ver=14fe6c63320b3200f356d0bcbca32121' id='wp-shortcode-js'></script>
-<script type='text/javascript' id='wp-blocks-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/blocks.min.js?ver=94ae7f5a0fa088eb1cb5e8b7a601a5eb' id='wp-blocks-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.26.0' id='moment-js'></script>
-<script type='text/javascript' id='moment-js-after'>
-moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/dom-ready.min.js?ver=db63eb2f693cb5e38b083946b14f0684' id='wp-dom-ready-js'></script>
-<script type='text/javascript' id='wp-a11y-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/a11y.min.js?ver=13971b965470c74a60fa32d392c78f2f' id='wp-a11y-js'></script>
-<script type='text/javascript' id='wp-keycodes-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/keycodes.min.js?ver=d22da43ca8a6cd671dd34ea661fff05f' id='wp-keycodes-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/rich-text.min.js?ver=a4056cfcb2aec8ceb3c8e8935dfd0bc4' id='wp-rich-text-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/warning.min.js?ver=4846e6a00f535179609298debad4670b' id='wp-warning-js'></script>
-<script type='text/javascript' id='wp-components-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/components.min.js?ver=2152e06558875aa948807b6ffd5da769' id='wp-components-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/url.min.js?ver=9dd4e33d1648e90d1390113c29d21f27' id='wp-url-js'></script>
-<script type='text/javascript' id='wp-api-fetch-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/api-fetch.min.js?ver=8773a93ea0d1278a2eaa147fdb6eb96d' id='wp-api-fetch-js'></script>
-<script type='text/javascript' id='wp-api-fetch-js-after'>
-wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "http://zakilive.com/wp-json/" ) );
-wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "a8883695c6" );
-wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
-wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
-wp.apiFetch.nonceEndpoint = "http://zakilive.com/wp-admin/admin-ajax.php?action=rest-nonce";
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/keyboard-shortcuts.min.js?ver=9cbe52add50401a0e626ebfcb37d742a' id='wp-keyboard-shortcuts-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/notices.min.js?ver=e8ba84906787f0394f07956c137fc314' id='wp-notices-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/token-list.min.js?ver=384d238d095e0738c66c24d5efd0d19e' id='wp-token-list-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/viewport.min.js?ver=74fa211298bad8b930c1e9c17d583843' id='wp-viewport-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/wordcount.min.js?ver=29fa35570f10ea28f9198bc26cd088cd' id='wp-wordcount-js'></script>
-<script type='text/javascript' id='wp-block-editor-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/block-editor.min.js?ver=a5482da84276f82419126932713bda2f' id='wp-block-editor-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/data-controls.min.js?ver=59b9a16339ffe9c2ef592270c19f77ed' id='wp-data-controls-js'></script>
-<script type='text/javascript' id='wp-core-data-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/core-data.min.js?ver=966113d894f354075b1eed5a141241bb' id='wp-core-data-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/date.min.js?ver=09eae2d679436dd6bd745b0e8b1687e9' id='wp-date-js'></script>
-<script type='text/javascript' id='wp-date-js-after'>
-wp.date.setSettings( {"l10n":{"locale":"en_US","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"meridiem":{"am":"am","pm":"pm","AM":"AM","PM":"PM"},"relative":{"future":"%s from now","past":"%s ago"}},"formats":{"time":"g:i a","date":"F j, Y","datetime":"F j, Y g:i a","datetimeAbbreviated":"M j, Y g:i a"},"timezone":{"offset":"1","string":""}} );
-</script>
-<script type='text/javascript' id='wp-media-utils-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/media-utils.min.js?ver=9ad24b42cc69f241229ded4dc61409fb' id='wp-media-utils-js'></script>
-<script type='text/javascript' id='wp-server-side-render-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/server-side-render.min.js?ver=4f5ad383aad9be9918f3a66c06cd5e4c' id='wp-server-side-render-js'></script>
-<script type='text/javascript' id='wp-editor-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/dist/editor.min.js?ver=a65f9b8727c91b9df1641cfd0545e051' id='wp-editor-js'></script>
-<script type='text/javascript' id='ultimeter-gutenberg-block-js-extra'>
-/* <![CDATA[ */
-var ultimeterGlobal = {"logoUrl":"http:\/\/zakilive.com\/wp-content\/plugins\/ultimeter\/admin\/assets\/images\/logo.svg"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/ultimeter/gutenberg/assets/js/ultimeter-gutenberg-block.js?ver=2.5.0' id='ultimeter-gutenberg-block-js'></script>
-<script type='text/javascript' id='quotescollection-js-extra'>
-/* <![CDATA[ */
-var quotescollectionAjax = {"ajaxUrl":"http:\/\/zakilive.com\/wp-admin\/admin-ajax.php","nonce":"f81e92926c","nextQuote":"Next quote \u00bb","loading":"Loading...","error":"Error getting quote","autoRefreshMax":"20","autoRefreshCount":"0"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/quotes-collection/js/quotes-collection.js?ver=2.5.2' id='quotescollection-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/bar/jquery.appear.js?ver=5.5.3' id='bar_script-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0' id='wp-quicklatex-frontend-js'></script>
-<link rel="https://api.w.org/" href="http://zakilive.com/wp-json/" /><link rel="alternate" type="application/json" href="http://zakilive.com/wp-json/wp/v2/categories/708" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://zakilive.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://zakilive.com/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.5.3" />
-
-
-<script type="text/javascript">
-	(function (w, d, id, ns, s) {
-		var c = w[ns] = w[ns] || {};
-		if (!c.ready) {
-			c.q = [];
-			c.ready = function () {
-				c.q.push(arguments);
-			};
-						c.ready.apply(c, ["expose",{"wp\/widgets":{"dependencies":["widgets"],"js":["https:\/\/assets.context.ly\/wp-plugin\/6.0.6\/js\/contextly-wordpress.js"],"foreign":true}}]);
-						c.ready.apply(c, ["libraries",{"jquery":false}]);
-						c.ready.apply(c, ["load","wp\/widgets"]);
-					}
-
-				if (!d.getElementById(id)) {
-			var e = d.createElement(s);
-			e.id = id;
-			e.src = "https:\/\/assets.context.ly\/kit\/6.latest\/loader.js";
-			var h = d.getElementsByTagName(s)[0];
-			h.parentNode.insertBefore(e, h);
-		}
-			})(window, document, 'ctx-loader', 'Contextly', 'script');
-
-	(function(c, ns){var v=c[ns]=c[ns]||{};v["appId"]="zakilive";
-	v["https"]=true;
-	v["client"]={"client":"wp","version":"6.0.6"};
-	})(Contextly,"overrides");
-(function(c, ns){var v=c[ns]=c[ns]||{};v["ajax_url"]="http:\/\/zakilive.com\/wp-admin\/admin-ajax.php";
-	})(Contextly,"wpdata");
-</script>
-<!-- Analytics by WP-Statistics v12.6.13 - https://wp-statistics.com/ -->
-<style type="text/css">/* Hot Random Image START */ 
-			#random-image-2{
-				width:100%;
-				height:auto;
-			}
-			
-		/* Hot Random Image END */
-		</style></head>
-
-
-
-	<div id="content-box">
-
-<div id="content-container">
-	
-		<div id="crayon-5fba829c0c052460025232" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
-		
-			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
-			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
-			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
-
-#include&lt;iostream&gt;
-using namespace std;
-int WHITE=1,GREY=2,BLACK=3,INF=310000,NIL=-1;
-int num_v,num_e,time=0;
-int adj[20][20],color[20],p[20],d[20],f[20];
-void DFS_visit(int);
-void initialization()
-{
-    int k,j;
-    for(k=0; k&lt;20; k++)
-    {
-        for(j=0; j&lt;20; j++)
-        {
-            adj[k][j]=0;
+<link href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/themes/prism.min.css' rel='stylesheet'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/themes/prism-okaidia.min.css' rel='stylesheet'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.css' rel='stylesheet'/>
+<style>
+      code[class*=language-], pre[class*=language-] {
+        line-height: 1.5;
+      }
+      pre {
+        font-size: 16px;
+      }
+      .language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url, .token.variable {
+          color: #a67f59;
+      }
+		.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+            color: #a67f59;
+            background: transparent;
         }
-    }
 
-}
-void build_adj_matrix()
-{
-    int i,a,b;
-    cout&lt;&lt;"Enter number of vertices: "&lt;&lt;endl;
-    cin&gt;&gt;num_v;
-    cout&lt;&lt;"Enter number of edges: "&lt;&lt;endl;
-    cin&gt;&gt;num_e;
-    cout&lt;&lt;"Enter edges: "&lt;&lt;endl;
-    for(i=1; i&lt;=num_e; i++)
-    {
-        cin&gt;&gt;a&gt;&gt;b;
-        adj[a][b]=1;
-    }
-}
-void dfs()
-{
-    int i,u;
-    for(i=1; i&lt;=num_v; i++)
-    {
-        color[i]=WHITE;
-        p[i]=NIL;
-    }
-    for(u=1; u&lt;=num_v; u++)
-    {
-        if(color[u]==WHITE)
-        {
-            DFS_visit(u);
-        }
-    }
-}
-void DFS_visit(int u)
-{
-    int i,v;
-    color[u]=GREY;
-    time=time+1;
-    d[u]=time;
-    for(v=1; v&lt;=num_v; v++)
-    {
-        if(adj[u][v]==1)
-        {
-            if(color[v]==WHITE)
-            {
-                p[v]=u;
-                DFS_visit(v);
-            }
-        }
-    }
-    color[u]=BLACK;
-    time=time+1;
-    f[u]=time;
-}
-void distance_output()
-{
-    int i;
-    cout&lt;&lt;"Discovery time and finish time:\n";
-    for(i=1; i&lt;=num_v; i++)
-    {
-        cout&lt;&lt;"Node "&lt;&lt;i&lt;&lt;" is "&lt;&lt;d[i]&lt;&lt;"/"&lt;&lt;f[i]&lt;&lt;" \n";
-    }
-}
-int main()
-{
-    initialization();
-    build_adj_matrix();
-    dfs();
-    distance_output();
-    return 0;
-}</textarea></div>
-			<div class="crayon-main" style="">
-				<table class="crayon-table">
-					<tr class="crayon-row">
-				<td class="crayon-nums " data-settings="show">
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-2">2</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-4">4</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-6">6</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-8">8</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-10">10</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-12">12</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-14">14</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-16">16</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-18">18</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-20">20</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-22">22</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-24">24</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-26">26</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-28">28</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-30">30</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-32">32</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-34">34</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-36">36</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-38">38</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-40">40</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-42">42</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-44">44</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-46">46</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-48">48</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-50">50</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-52">52</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-54">54</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-56">56</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-58">58</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-60">60</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-62">62</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-64">64</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-66">66</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-68">68</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-70">70</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-71">71</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-72">72</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-73">73</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-74">74</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-75">75</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-76">76</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-77">77</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-78">78</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-79">79</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-80">80</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-81">81</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-82">82</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-83">83</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-84">84</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-85">85</div><div class="crayon-num crayon-striped-num" data-line="crayon-5fba829c0c052460025232-86">86</div><div class="crayon-num" data-line="crayon-5fba829c0c052460025232-87">87</div></div>
-				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5fba829c0c052460025232-1"><span class="crayon-c">//dfs using adjacency list in directed graph</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-2"><span class="crayon-p">#include&lt;iostream&gt;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-3"><span class="crayon-e">using </span><span class="crayon-t">namespace</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-4"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">WHITE</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-v">GREY</span><span class="crayon-o">=</span><span class="crayon-cn">2</span><span class="crayon-sy">,</span><span class="crayon-v">BLACK</span><span class="crayon-o">=</span><span class="crayon-cn">3</span><span class="crayon-sy">,</span><span class="crayon-v">INF</span><span class="crayon-o">=</span><span class="crayon-cn">310000</span><span class="crayon-sy">,</span><span class="crayon-v">NIL</span><span class="crayon-o">=</span><span class="crayon-o">-</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-5"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">num_v</span><span class="crayon-sy">,</span><span class="crayon-v">num_e</span><span class="crayon-sy">,</span><span class="crayon-v">time</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-6"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">adj</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">,</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">,</span><span class="crayon-v">p</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">,</span><span class="crayon-v">d</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">,</span><span class="crayon-v">f</span><span class="crayon-sy">[</span><span class="crayon-cn">20</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-7"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">DFS_visit</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-8"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">initialization</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-9"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">k</span><span class="crayon-sy">,</span><span class="crayon-v">j</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">k</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">k</span><span class="crayon-o">&lt;</span><span class="crayon-cn">20</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">k</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-13"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">j</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">j</span><span class="crayon-o">&lt;</span><span class="crayon-cn">20</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">j</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">adj</span><span class="crayon-sy">[</span><span class="crayon-v">k</span><span class="crayon-sy">]</span><span class="crayon-sy">[</span><span class="crayon-v">j</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-18">&nbsp;</div><div class="crayon-line" id="crayon-5fba829c0c052460025232-19"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-20"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">build_adj_matrix</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-21"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-22"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-sy">,</span><span class="crayon-v">a</span><span class="crayon-sy">,</span><span class="crayon-v">b</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-23"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cout</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"Enter number of vertices: "</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-24"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cin</span><span class="crayon-o">&gt;&gt;</span><span class="crayon-v">num_v</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-25"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cout</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"Enter number of edges: "</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-26"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cin</span><span class="crayon-o">&gt;&gt;</span><span class="crayon-v">num_e</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-27"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cout</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"Enter edges: "</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-28"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">&lt;=</span><span class="crayon-v">num_e</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-29"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-30"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cin</span><span class="crayon-o">&gt;&gt;</span><span class="crayon-v">a</span><span class="crayon-o">&gt;&gt;</span><span class="crayon-v">b</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-31"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">adj</span><span class="crayon-sy">[</span><span class="crayon-v">a</span><span class="crayon-sy">]</span><span class="crayon-sy">[</span><span class="crayon-v">b</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-32"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-33"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-34"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">dfs</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-35"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-36"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-sy">,</span><span class="crayon-v">u</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-37"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">&lt;=</span><span class="crayon-v">num_v</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-38"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-39"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">WHITE</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-40"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">p</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">NIL</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-41"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-42"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">u</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">u</span><span class="crayon-o">&lt;=</span><span class="crayon-v">num_v</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">u</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-43"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-44"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-o">==</span><span class="crayon-v">WHITE</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-45"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-46"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">DFS_visit</span><span class="crayon-sy">(</span><span class="crayon-v">u</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-47"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-48"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-49"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-50"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">DFS_visit</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">u</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-51"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-52"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-sy">,</span><span class="crayon-v">v</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-53"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">GREY</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-54"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">time</span><span class="crayon-o">=</span><span class="crayon-v">time</span><span class="crayon-o">+</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-55"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">d</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">time</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-56"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">v</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">v</span><span class="crayon-o">&lt;=</span><span class="crayon-v">num_v</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">v</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-57"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-58"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">adj</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-sy">[</span><span class="crayon-v">v</span><span class="crayon-sy">]</span><span class="crayon-o">==</span><span class="crayon-cn">1</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-59"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-60"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-sy">(</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-v">v</span><span class="crayon-sy">]</span><span class="crayon-o">==</span><span class="crayon-v">WHITE</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-61"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-62"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">p</span><span class="crayon-sy">[</span><span class="crayon-v">v</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">u</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-63"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">DFS_visit</span><span class="crayon-sy">(</span><span class="crayon-v">v</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-64"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-65"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-66"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-67"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">color</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">BLACK</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-68"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">time</span><span class="crayon-o">=</span><span class="crayon-v">time</span><span class="crayon-o">+</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-69"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">f</span><span class="crayon-sy">[</span><span class="crayon-v">u</span><span class="crayon-sy">]</span><span class="crayon-o">=</span><span class="crayon-v">time</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-70"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-71"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">distance_output</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-72"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-73"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-74"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cout</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"Discovery time and finish time:\n"</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-75"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">for</span><span class="crayon-sy">(</span><span class="crayon-v">i</span><span class="crayon-o">=</span><span class="crayon-cn">1</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">&lt;=</span><span class="crayon-v">num_v</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-v">i</span><span class="crayon-o">++</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-76"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-77"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">cout</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"Node "</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">i</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">" is "</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">d</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">"/"</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-v">f</span><span class="crayon-sy">[</span><span class="crayon-v">i</span><span class="crayon-sy">]</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-s">" \n"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-78"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-79"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-80"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-81"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-82"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">initialization</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-83"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">build_adj_matrix</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-84"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">dfs</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-85"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">distance_output</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5fba829c0c052460025232-86"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5fba829c0c052460025232-87"><span class="crayon-sy">}</span></div></div></td>
-					</tr>
-				</table>
-			</div>
-		</div>
+    </style>
+<!-- BDAds Advertising -->
+<script src='https://cdn.bdads.mobi/js/bdads-api.js' type='text/javascript'></script>
+<script>
+
+  if(window.location.href == 'http://onlinejudgesolution.blogspot.com/2015/10/ura-online-judge-solution-1001-uri.html')
+  {
+      window.location.href="http://codinghousebd.com/blog/uri-oj-solution-1001-simple-summation-problem-solution";
+  }
+
+ if(window.location.href == 'http://onlinejudgesolution.blogspot.com/2017/07/uri-online-judge-solution-1042-simple.html')
+  {
+      window.location.href="http://codinghousebd.com/blog/uri-oj-solution-1042-simple-sort-solution-in-c-c-java-python-and-c";
+  }
 
 
-
-
-		
-	
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
-		Contextly.ready('load', "wp\/widgets", function() {
-		Contextly.WPSettings.setPostData(1242,{"ajax_nonce":"5f9a969ab6"});Contextly.ready("widgets");	});
-	</script>
-<script type='text/javascript' id='disqus_count-js-extra'>
-/* <![CDATA[ */
-var countVars = {"disqusShortname":"zakilive"};
-/* ]]> */
 </script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.17' id='disqus_count-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.4' id='page-links-to-js'></script>
-<script type='text/javascript' id='heateor_sss_sharing_js-js-before'>
-function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'http://zakilive.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'http://zakilive.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'http://zakilive.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")};var heateorSssWhatsappShareAPI = "web";
+<link href='https://draft.blogger.com/dyn-css/authorization.css?targetBlogID=3933313570623671267&amp;zx=6918a8dd-f862-465d-ade5-e3b1e1feaa29' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://draft.blogger.com/dyn-css/authorization.css?targetBlogID=3933313570623671267&amp;zx=6918a8dd-f862-465d-ade5-e3b1e1feaa29' rel='stylesheet'/></noscript>
+
+<!-- data-ad-client=ca-pub-5382875906534913 -->
+
+</head>
+
+<script id="GNR44313">
+    (function (i,g,b,d,c) {
+        i[g]=i[g]||function(){(i[g].q=i[g].q||[]).push(arguments)};
+        var s=d.createElement(b);s.async=true;s.src=c;
+        var x=d.getElementsByTagName(b)[0];
+        x.parentNode.insertBefore(s, x);
+    })(window,'gandrad','script',document,'//content.green-red.com/lib/display.js');
+    gandrad({siteid:14841,slot:44313});
 </script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.14' id='heateor_sss_sharing_js-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.js?ver=1.6' id='circle_script-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/circle/custom.js?ver=1.6' id='circle_custom_script-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.6' id='gage_script-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.6' id='gage_raphael_script-js'></script>
-<script type='text/javascript' src='http://zakilive.com/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+
+
+<!-- End of G&R_728x90 -->
+
+<h3>
+Code
+</h3>
+<br />
+<pre><span class="pre" style="color: #000099;">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#define max(x, y) ((x) &gt; (y) ? (x) : (y))
+#define swap(x, y) {int tmp; tmp = x, x = y, y = tmp;}
+#define N 1000000
+#define node 1048576
+</span><span class="type" style="color: #ff6633;">int</span> A<span class="operator" style="color: #663300; font-weight: bold;">[</span>N<span class="operator" style="color: #663300; font-weight: bold;">+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">],</span> tree<span class="operator" style="color: #663300; font-weight: bold;">[</span>node<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">];</span><span class="type" style="color: #ff6633;">
+void</span> setTree<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="type" style="color: #ff6633;">int</span> l<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> r<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> k<span class="operator" style="color: #663300; font-weight: bold;">) {</span><span class="flow" style="color: red;">
+    if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;"> ==</span> r<span class="operator" style="color: #663300; font-weight: bold;">)</span>
+        tree<span class="operator" style="color: #663300; font-weight: bold;">[</span>k<span class="operator" style="color: #663300; font-weight: bold;">] =</span> A<span class="operator" style="color: #663300; font-weight: bold;">[</span>l<span class="operator" style="color: #663300; font-weight: bold;">];</span><span class="flow" style="color: red;">
+    if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;"> &lt;</span> r<span class="operator" style="color: #663300; font-weight: bold;">) {</span><span class="type" style="color: #ff6633;">
+        int</span> m<span class="operator" style="color: #663300; font-weight: bold;"> = (</span>l<span class="operator" style="color: #663300; font-weight: bold;">+</span>r<span class="operator" style="color: #663300; font-weight: bold;">) &gt;&gt;</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;</span>
+        setTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;">,</span> m<span class="operator" style="color: #663300; font-weight: bold;">,</span> k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">);</span>
+        setTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>m<span class="operator" style="color: #663300; font-weight: bold;">+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> r<span class="operator" style="color: #663300; font-weight: bold;">, (</span>k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">)+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">);</span>
+        tree<span class="operator" style="color: #663300; font-weight: bold;">[</span>k<span class="operator" style="color: #663300; font-weight: bold;">] =</span> max<span class="operator" style="color: #663300; font-weight: bold;">(</span>tree<span class="operator" style="color: #663300; font-weight: bold;">[</span>k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">],</span> tree<span class="operator" style="color: #663300; font-weight: bold;">[(</span>k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">)+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">]);
+    }
+}</span><span class="type" style="color: #ff6633;">
+int</span> getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="type" style="color: #ff6633;">int</span> l<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> r<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> k<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="type" style="color: #ff6633;"> int</span> j<span class="operator" style="color: #663300; font-weight: bold;">) {</span><span class="flow" style="color: red;">
+    if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;"> ==</span> i<span class="operator" style="color: #663300; font-weight: bold;"> &amp;&amp;</span> r<span class="operator" style="color: #663300; font-weight: bold;"> ==</span> j<span class="operator" style="color: #663300; font-weight: bold;">)</span><span class="flow" style="color: red;">
+        return</span> tree<span class="operator" style="color: #663300; font-weight: bold;">[</span>k<span class="operator" style="color: #663300; font-weight: bold;">];</span><span class="flow" style="color: red;">
+    if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;"> &lt;</span> r<span class="operator" style="color: #663300; font-weight: bold;">) {</span><span class="type" style="color: #ff6633;">
+        int</span> m<span class="operator" style="color: #663300; font-weight: bold;"> = (</span>l<span class="operator" style="color: #663300; font-weight: bold;">+</span>r<span class="operator" style="color: #663300; font-weight: bold;">) &gt;&gt;</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;</span><span class="flow" style="color: red;">
+        if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>m<span class="operator" style="color: #663300; font-weight: bold;"> &gt;=</span> j<span class="operator" style="color: #663300; font-weight: bold;">)</span><span class="flow" style="color: red;">
+            return</span> getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;">,</span> m<span class="operator" style="color: #663300; font-weight: bold;">,</span> k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">);</span><span class="flow" style="color: red;">
+        else if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>m<span class="operator" style="color: #663300; font-weight: bold;"> &lt;</span> i<span class="operator" style="color: #663300; font-weight: bold;">)</span><span class="flow" style="color: red;">
+            return</span> getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>m<span class="operator" style="color: #663300; font-weight: bold;">+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> r<span class="operator" style="color: #663300; font-weight: bold;">, (</span>k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">)+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">);</span><span class="flow" style="color: red;">
+        else
+            return</span> max<span class="operator" style="color: #663300; font-weight: bold;">(</span>getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>l<span class="operator" style="color: #663300; font-weight: bold;">,</span> m<span class="operator" style="color: #663300; font-weight: bold;">,</span> k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> m<span class="operator" style="color: #663300; font-weight: bold;">),</span> getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span>m<span class="operator" style="color: #663300; font-weight: bold;">+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> r<span class="operator" style="color: #663300; font-weight: bold;">, (</span>k<span class="operator" style="color: #663300; font-weight: bold;">&lt;&lt;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">)+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> m<span class="operator" style="color: #663300; font-weight: bold;">+</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">));
+    }
+}</span><span class="type" style="color: #ff6633;">
+void</span> build<span class="operator" style="color: #663300; font-weight: bold;">() {</span><span class="type" style="color: #ff6633;">
+    long long</span> n<span class="operator" style="color: #663300; font-weight: bold;">;</span><span class="type" style="color: #ff6633;">
+    int</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> len<span class="operator" style="color: #663300; font-weight: bold;">;</span>
+    memset<span class="operator" style="color: #663300; font-weight: bold;">(</span>A<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="int" style="color: #999900;"> 0</span><span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="keyword" style="color: #990000;"> sizeof</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>A<span class="operator" style="color: #663300; font-weight: bold;">));</span>
+    memset<span class="operator" style="color: #663300; font-weight: bold;">(</span>tree<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="int" style="color: #999900;"> 0</span><span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="keyword" style="color: #990000;"> sizeof</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>tree<span class="operator" style="color: #663300; font-weight: bold;">));</span>
+    A<span class="operator" style="color: #663300; font-weight: bold;">[</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">] =</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;</span><span class="flow" style="color: red;">
+    for</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>i<span class="operator" style="color: #663300; font-weight: bold;"> =</span><span class="int" style="color: #999900;"> 2</span><span class="operator" style="color: #663300; font-weight: bold;">;</span> i<span class="operator" style="color: #663300; font-weight: bold;"> &lt;=</span> N<span class="operator" style="color: #663300; font-weight: bold;">;</span> i<span class="operator" style="color: #663300; font-weight: bold;">++) {</span>
+        n<span class="operator" style="color: #663300; font-weight: bold;"> =</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> len<span class="operator" style="color: #663300; font-weight: bold;"> =</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;</span><span class="flow" style="color: red;">
+        while</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>n<span class="operator" style="color: #663300; font-weight: bold;"> !=</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">) {</span><span class="flow" style="color: red;">
+            if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>n<span class="operator" style="color: #663300; font-weight: bold;">&amp;</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">) {</span>
+                n<span class="operator" style="color: #663300; font-weight: bold;"> =</span> n<span class="operator" style="color: #663300; font-weight: bold;">*</span><span class="int" style="color: #999900;">3</span><span class="operator" style="color: #663300; font-weight: bold;"> +</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;
+            }</span><span class="flow" style="color: red;"> else</span><span class="operator" style="color: #663300; font-weight: bold;"> {</span>
+                n<span class="operator" style="color: #663300; font-weight: bold;"> &gt;&gt;=</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">;
+            }</span><span class="flow" style="color: red;">
+            if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>n<span class="operator" style="color: #663300; font-weight: bold;"> &lt;</span> N<span class="operator" style="color: #663300; font-weight: bold;"> &amp;&amp;</span> A<span class="operator" style="color: #663300; font-weight: bold;">[</span>n<span class="operator" style="color: #663300; font-weight: bold;">] !=</span><span class="int" style="color: #999900;"> 0</span><span class="operator" style="color: #663300; font-weight: bold;">) {</span>
+                len<span class="operator" style="color: #663300; font-weight: bold;"> +=</span> A<span class="operator" style="color: #663300; font-weight: bold;">[</span>n<span class="operator" style="color: #663300; font-weight: bold;">];</span><span class="flow" style="color: red;">
+                break</span><span class="operator" style="color: #663300; font-weight: bold;">;
+            }</span>
+            len<span class="operator" style="color: #663300; font-weight: bold;"> ++;
+        }</span>
+        A<span class="operator" style="color: #663300; font-weight: bold;">[</span>i<span class="operator" style="color: #663300; font-weight: bold;">] =</span> len<span class="operator" style="color: #663300; font-weight: bold;">;
+    }</span>
+    setTree<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> N<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">);
+}</span><span class="type" style="color: #ff6633;">
+int</span><span class="keyword" style="color: #990000;"> main</span><span class="operator" style="color: #663300; font-weight: bold;">() {</span>
+    build<span class="operator" style="color: #663300; font-weight: bold;">();</span><span class="type" style="color: #ff6633;">
+    int</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">;</span><span class="flow" style="color: red;">
+    while</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>scanf<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="string" style="color: #009900;">"%d %d"</span><span class="operator" style="color: #663300; font-weight: bold;">, &amp;</span>i<span class="operator" style="color: #663300; font-weight: bold;">, &amp;</span>j<span class="operator" style="color: #663300; font-weight: bold;">) ==</span><span class="int" style="color: #999900;"> 2</span><span class="operator" style="color: #663300; font-weight: bold;">) {</span>
+        printf<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="string" style="color: #009900;">"%d %d "</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">);</span><span class="flow" style="color: red;">
+        if</span><span class="operator" style="color: #663300; font-weight: bold;">(</span>i<span class="operator" style="color: #663300; font-weight: bold;"> &gt;</span> j<span class="operator" style="color: #663300; font-weight: bold;">)</span>
+            swap<span class="operator" style="color: #663300; font-weight: bold;">(</span>i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">);</span>
+        printf<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="string" style="color: #009900;">"%d\n"</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> getTree<span class="operator" style="color: #663300; font-weight: bold;">(</span><span class="int" style="color: #999900;">1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> N<span class="operator" style="color: #663300; font-weight: bold;">,</span><span class="int" style="color: #999900;"> 1</span><span class="operator" style="color: #663300; font-weight: bold;">,</span> i<span class="operator" style="color: #663300; font-weight: bold;">,</span> j<span class="operator" style="color: #663300; font-weight: bold;">));
+    }</span><span class="flow" style="color: red;">
+    return</span><span class="int" style="color: #999900;"> 0</span><span class="operator" style="color: #663300; font-weight: bold;">;
+}</span></pre>
+</div>
+<style>
+#search-box {
+position: relative;
+width: 100%;
+margin: 0;
+}
+
+#search-form 
+{
+height: 42px;
+border: 1px solid #ebebeb;
+background-color: #fff;
+overflow: hidden;
+}
+#search-text 
+{
+font-size: 14px;
+color: #ddd;
+border-width: 0;
+background: transparent;
+height: 42px;
+    line-height: 42px;
+}
+
+#search-box input[type="text"]
+{
+width: 90%;
+padding: 11px 0 12px 1em;
+color: #333;
+outline: none;
+}
+
+#search-button {
+position: absolute;
+top: 0;
+right: 0;
+height: 42px;
+width: 80px;
+font-size: 14px;
+color: #fff;
+text-align: center;
+line-height: 42px;
+border-width: 0;
+background-color: #455A64;
+
+cursor: pointer;
+}
+</style>
+
+
+
+<script id="GNR58999">
+    (function (i,g,b,d,c) {
+        i[g]=i[g]||function(){(i[g].q=i[g].q||[]).push(arguments)};
+        var s=d.createElement(b);s.async=true;s.src=c;
+        var x=d.getElementsByTagName(b)[0];
+        x.parentNode.insertBefore(s, x);
+    })(window,'gandrad','script',document,'//content.green-red.com/lib/display.js');
+    gandrad({siteid:14841,slot:58999});
+</script>
+
+<!-- End of G&R_250x250 -->
+</div>
+
+
 </body>
 </html>
